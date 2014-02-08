@@ -1,5 +1,11 @@
 Changelog
 =========
+1.1.3 (2014-2-7)
+----------------
+TODO
+- In Development, Trying to get it work collective.responsivetheme
+
+
 
 1.1.2 (2011-11-25)
 ------------------
