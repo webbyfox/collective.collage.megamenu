@@ -1,0 +1,8 @@
+
+# ignore compiled python files
+*.py[co]
+*.DS_Store
+*.egg-info
+Thumbs.db
+
+/dist
