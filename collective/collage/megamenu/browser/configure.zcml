@@ -83,7 +83,7 @@
 
   <browser:viewlet
         name="collective.collage.megamenu.megamenu"
-        manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+        manager="jcst.responsivetheme.browser.interfaces.IJCSTPortalTop"
         class="collective.collage.megamenu.browser.viewlet.MegamenuViewlet"
         permission="zope2.View"
         layer="collective.collage.megamenu.interfaces.IMegamenuLayer"

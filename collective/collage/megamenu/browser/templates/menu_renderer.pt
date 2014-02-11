@@ -1,3 +1,4 @@
+<div id="portal-top-megamenu">
 <ul id="portal-megamenu" class="megamenu visualNoPrint"
     tal:define="items view/getItems">
 
@@ -33,3 +34,4 @@
     </li>
     </tal:items>
 </ul>
+</div>
