@@ -1,5 +1,13 @@
 /* Menu rendering */
 
+#portal-top-megamenu{
+	 width: 100%;
+background:#2d2d2d;
+border-bottom: 5px solid #00b6f2;
+  height: 72px;
+  display: block !important;
+}
+
 #collage ul.megamenu {
     /* To prevent margin-left in collage compose view */
     margin-left: 0;
@@ -8,10 +16,10 @@
 
 #portal-megamenu {
     /* From Sunburst public.css: #portal-globalnav */
-	margin: 0 0 1em 0; 
-	padding: 0;
-	float:left;
-	width: 100%;
+	position: relative;
+	left: 0px;
+	margin: 0 auto;
+	width: 940px;
 	list-style: none;
 }
 #portal-megamenu li.top-level {
@@ -35,6 +43,7 @@
 #portal-megamenu li.top-level .subShadow {
 	position: absolute;
         z-index: 3;
+        margin-top:72px;
 }
 
 #portal-megamenu li .menu-row {
@@ -69,6 +78,7 @@
 	height: auto;
 	display: block;
     white-space: nowrap;
+    font-family: 'open_sansregular', "Helvetica Neue", Arial, sans-serif !important;
 }
 
 /* End Menu rendering */
@@ -95,68 +105,80 @@
 }
 
 #portal-megamenu {
-	font-size: 80%;
-	background: #ddd;
+	font-family: 'open_sansbold', sans-serif !important;
+	font-size: 13px;
+	background: #2d2d2d;
+font-weight: bold\9;
 }
 
 #portal-megamenu li a.menu-item {
-	height: 41px;
-	padding: 0.5em 1em 0em;
-	background: #ddd;
-	border-right: 0.1em solid white;
-	min-width: 6em;
+	font-family: 'open_sansbold', sans-serif !important;
+	height: 50px;
+	padding: 17px 0 0px 0;
+	background: #2d2d2d;
+	/*border-right: 0.1em solid white;*/
+	width: 134px;
+	color: #ffffff;
+  vertical-align: middle; 
+  text-align: center;
 }
 
 #portal-megamenu li a.menu-item:hover {
-    background: #ccc;
+    background: #94c01c;
+    width: 134px !important;
 }
 
 #portal-megamenu li.active a.menu-item {
-    background: #205c90;
+    background: #94c01c;
     color: white;
+    width: 134px;
 }
 
 #portal-megamenu li.top-level .sub {
-	top: 47px; 
+	top: 57px; 
 	background: white;
-	padding: 15px;
-	border: #205c90 4px solid;
-	/*--Bottom right rounded corner--*/
-	-moz-border-radius-bottomright: 5px;
-	-khtml-border-radius-bottomright: 5px;
-	-webkit-border-bottom-right-radius: 5px;
-	/*--Bottom left rounded corner--*/
-	-moz-border-radius-bottomleft: 5px;
-	-khtml-border-radius-bottomleft: 5px;
-	-webkit-border-bottom-left-radius: 5px;
+	padding: 0px;
+	-webkit-box-shadow: 0px 1px 5px 0px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    0px 1px 5px 0px rgba(50, 50, 50, 0.75);
+	box-shadow:         0px 1px 5px 0px rgba(50, 50, 50, 0.75);
+
+	filter: 
+  progid:DXImageTransform.Microsoft.Shadow(color=#aaaaaa,direction=0,strength=5), 
+  progid:DXImageTransform.Microsoft.Shadow(color=#aaaaaa,direction=45,strength=2), 
+  progid:DXImageTransform.Microsoft.Shadow(color=#aaaaaa,direction=90,strength=5), 
+  progid:DXImageTransform.Microsoft.Shadow(color=#aaaaaa,direction=135,strength=5), 
+  progid:DXImageTransform.Microsoft.Shadow(color=#aaaaaa,direction=180,strength=10), 
+  progid:DXImageTransform.Microsoft.Shadow(color=#aaaaaa,direction=225,strength=5), 
+  progid:DXImageTransform.Microsoft.Shadow(color=#aaaaaa,direction=270,strength=5), 
+  progid:DXImageTransform.Microsoft.Shadow(color=#aaaaaa,direction=315,strength=2);
 }
 
 #portal-megamenu li.top-level .subShadow {
-	top: 47px;
-	background: black; /* subShadow has 0.6 opacity when displayed */
-	border-bottom-left-radius: 5px;
-	border-bottom-right-radius: 5px;
+display:none;
+	/*top: 68px;*/
+	/*background: black;*/ /* subShadow has 0.6 opacity when displayed */
 	/* Add or change padding/margin move padding to re-place shadow box:
 	 * - for right-bottom shadow add bottom padding and left margin
 	 * - for left-bottom shadow add bottom padding and left negative margin
 	 * - for left-right-bottom shadow, add bottom padding, left negative margin and double right padding
 	 */
-	padding: 0 0 2px 0; 
-	margin: 0 0 0 2px;
-	
+
+	/*padding: 0 0 2px 0;*/ 
+	/*margin: 0 0 0 2px;*/
+
 }
 
 #portal-megamenu li .menu-row {
-    margin: 0 auto 10px;
+    margin: 0 auto ;
 }
 
 #portal-megamenu li .collage-megamenu-hlines,
 #portal-megamenu li .collage-megamenu-hvlines {
-    border-bottom: 1px solid #ddd;
+   /*border-bottom: 1px solid red; */
 }
 
 #portal-megamenu .sub ul {
-	margin: 0 10px 10px 0; 
+	margin: 0 0.5em 1em 0; 
     padding: 0;
 }
 
@@ -175,22 +197,25 @@
 }
 
 #portal-megamenu .sub ul li {
-	color: #76797c;
+	color: #535353;
+
 }
 
 #portal-megamenu .sub ul li span {
 	padding: 0;  
 	margin: 0;
-	font-size: 1.3em;
-	font-weight: bold;
+	font-family: 'open_sansregular', 'Helvetica Neue', Arial, sans-serif;
+	font-size: 13px;
+	font-weight: normal;
 	width: 100%;
+	color: #535353;
 }
 
 #portal-megamenu .sub ul li a {
-	padding: 5px 0 5px 10px;
+	padding: 10px 10px 10px 10px;
 	text-decoration: none;
-	color: #205c90;
-	width: 85%;
+	color: #535353 !important;
+	/*width: 50%;*/	
 }
 
 #portal-megamenu .sub ul li a.collage-megamenu-highlight {
@@ -198,7 +223,7 @@
 }
 
 #portal-megamenu .sub ul li a:hover {
-	color: #ddd; 
+	color: #fff !important; 
 	background: #205c90;
 }
 
@@ -234,6 +259,20 @@
 #portal-megamenu ul li .megamenu-content a:hover img {
 	border-color: #205C90;
 }
+
+#portal-megamenu h2{
+	display: none !important;
+}
+
+#portal-megamenu span a{
+	background: none !important;
+}
+
+#portal-megamenu span a:hover{
+	background: #94C01C !important;
+}
+
+#portal-megamenu span.arrowDownAlternative{display: none;}
 
 
 /* End Menu styling for Sunburst theme */

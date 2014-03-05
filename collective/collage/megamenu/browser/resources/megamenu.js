@@ -46,7 +46,7 @@ jq(document).ready(function() {
                 columns.css('width', biggestRow / count);
             });
 
-            biggestRow += 30; //Set width adding 15 + 15 px (left and right padding)
+            biggestRow += 0; //Set width adding 15 + 15 px (left and right padding) (Original Value 30)
             this.css({
                 'width': biggestRow
             });
@@ -193,7 +193,7 @@ jq(document).ready(function() {
     // and Bind click event of their links-with-menues to prevent redirection
     find('a').click(function(event) {
         if (jq(this).closest('li').find('.sub').length > 0) {
-            event.preventDefault();
+            //event.preventDefault();
         }
     });
 

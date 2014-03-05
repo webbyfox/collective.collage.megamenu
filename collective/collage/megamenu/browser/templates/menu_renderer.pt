@@ -8,7 +8,7 @@
     	tal:attributes="class string:top-level ${item/selected_class} top-level-${repeat/item/number} ${last_class};
                         id string:mm-tl-${item/id}">
         <a class="menu-item" href="" 
-            tal:attributes="href item/url; 
+            tal:attributes="href string: ${context/portal_url}/${item/id}; 
                             title item/description;
                             class string:menu-item ${item/class}">
             <tal:title content="item/title">
